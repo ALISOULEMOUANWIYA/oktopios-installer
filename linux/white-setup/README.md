@@ -1,10 +1,23 @@
 # Linux Native Installer
 
-This folder is reserved for the Linux native installer.
+This folder contains the Linux installer scripts for Oktopios.
 
-For now, install from PyPI:
+## Install
 
 ```bash
-python3 -m pip install --user oktopios
-okp --version
+chmod +x install-oktopios.sh
+./install-oktopios.sh
+```
+
+The script installs Oktopios from PyPI:
+
+```bash
+python3 -m pip install --user --upgrade oktopios
+```
+
+## Uninstall
+
+```bash
+chmod +x uninstall-oktopios.sh
+./uninstall-oktopios.sh
 ```

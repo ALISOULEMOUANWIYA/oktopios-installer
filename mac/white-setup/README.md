@@ -1,10 +1,39 @@
 # macOS Native Installer
 
-This folder is reserved for the macOS native installer.
+This folder contains the macOS installer scripts for Oktopios.
 
-For now, install from PyPI:
+## Install
+
+Double-click:
+
+```text
+install-oktopios.command
+```
+
+Or run from Terminal:
 
 ```bash
-python3 -m pip install --user oktopios
-okp --version
+chmod +x install-oktopios.command
+./install-oktopios.command
+```
+
+The script installs Oktopios from PyPI:
+
+```bash
+python3 -m pip install --user --upgrade oktopios
+```
+
+## Uninstall
+
+Double-click:
+
+```text
+uninstall-oktopios.command
+```
+
+Or run:
+
+```bash
+chmod +x uninstall-oktopios.command
+./uninstall-oktopios.command
 ```
