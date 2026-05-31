@@ -1,6 +1,6 @@
 # Oktopios Installer - Windows
 
-## Recommended
+## Graphical installer
 
 Download and run:
 
@@ -8,25 +8,12 @@ Download and run:
 windows/white-setup/OktopiosInstaller.exe
 ```
 
-## CLI executable
+The `white-setup` folder is intentionally kept simple: it contains only the Windows installer executable.
 
-Standalone `okp.exe` files are available here:
+## Command-line installation
 
-```text
-windows/white-setup/bin/okp.exe
-windows/white-setup/dist/okp.exe
-```
-
-## Installer source files
-
-The Inno Setup script is here:
+For users who prefer commands instead of the `.exe` installer, use:
 
 ```text
-windows/white-setup/oktopios_installer.iss
-```
-
-The install batch script is here:
-
-```text
-windows/white-setup/setup/install_script.bat
+windows/white-cmd/README.md
 ```
