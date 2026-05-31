@@ -1,6 +1,6 @@
-# Oktopios Installer - iOS iSH
+# Oktopios - iOS iSH
 
-Install iSH Shell from the App Store, then run:
+iSH uses the PyPI command-line installation:
 
 ```sh
 apk update
@@ -9,8 +9,5 @@ python3 -m pip install oktopios
 okp --version
 ```
 
-Test:
-
-```sh
-okp 'print("Bonjour Oktopios")'
-```
+PyPI:
+https://pypi.org/project/oktopios/

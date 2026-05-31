@@ -1,6 +1,6 @@
 # Oktopios Installer - Windows
 
-## Graphical installer
+## Native installer
 
 Download and run:
 
@@ -8,12 +8,16 @@ Download and run:
 windows/white-setup/OktopiosInstaller.exe
 ```
 
-The `white-setup` folder is intentionally kept simple: it contains only the Windows installer executable.
+The `white-setup` folder is intentionally installer-only.
 
-## Command-line installation
+## Command line
 
-For users who prefer commands instead of the `.exe` installer, use:
+For command-line installation, use the PyPI package:
 
-```text
-windows/white-cmd/README.md
+```powershell
+pip install oktopios
+okp --version
 ```
+
+PyPI:
+https://pypi.org/project/oktopios/

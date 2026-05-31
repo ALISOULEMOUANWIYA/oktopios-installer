@@ -1,28 +1,38 @@
 # Oktopios Installer
 
-Installers and setup commands for Oktopios.
+Native installers for Oktopios.
 
-Choose your platform below:
+For command-line installation on every platform, use the PyPI package:
 
-| Platform | What users should use |
-|---|---|
-| Windows setup | Download `windows/white-setup/OktopiosInstaller.exe` |
-| Windows command line | Use the commands in `windows/white-cmd/README.md` |
-| Linux | Use the commands in `linux/README.md` |
-| macOS | Use the commands in `mac/README.md` |
-| Android Termux | Use the commands in `android-temux/README.md` |
-| iOS iSH | Use the commands in `ios-ish/README.md` |
-
-Main Oktopios project:
-https://github.com/ALISOULEMOUANWIYA/oktopios
+```bash
+pip install oktopios
+okp --version
+```
 
 PyPI package:
 https://pypi.org/project/oktopios/
 
-## Windows quick download
+Main Oktopios project:
+https://github.com/ALISOULEMOUANWIYA/oktopios
 
-The Windows graphical installer is here:
+## Native installers
+
+| Platform | Status | Path |
+|---|---|---|
+| Windows | Available | `windows/white-setup/OktopiosInstaller.exe` |
+| Linux | To build | `linux/white-setup/` |
+| macOS | To build | `mac/white-setup/` |
+| Android Termux | Command-line via PyPI | `android-temux/README.md` |
+| iOS iSH | Command-line via PyPI | `ios-ish/README.md` |
+
+## Windows installer
+
+Download and run:
 
 ```text
 windows/white-setup/OktopiosInstaller.exe
 ```
+
+## What remains to build
+
+The command-line path is already handled by PyPI for all platforms. The remaining work in this repository is to add native installers for platforms that need them, especially Linux and macOS.

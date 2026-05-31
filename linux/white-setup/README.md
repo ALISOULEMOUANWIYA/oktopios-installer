@@ -1,8 +1,8 @@
-# Linux - Setup Installer
+# Linux Native Installer
 
-Installer files for Linux can be placed in this folder.
+This folder is reserved for the Linux native installer.
 
-Current recommended installation:
+For now, install from PyPI:
 
 ```bash
 python3 -m pip install --user oktopios

@@ -1,24 +1,25 @@
 # Oktopios Installer - Linux
 
-## Install from PyPI
+## Command line
+
+The command-line installation is handled by PyPI:
 
 ```bash
 python3 -m pip install --user oktopios
 okp --version
 ```
 
-If `okp` is not found, add the local Python bin directory to your PATH:
+If `okp` is not found:
 
 ```bash
 export PATH="$HOME/.local/bin:$PATH"
 okp --version
 ```
 
-## From source
+## Native installer
 
-```bash
-git clone https://github.com/ALISOULEMOUANWIYA/oktopios.git
-cd oktopios
-python3 -m pip install -e .
-okp --version
+Linux native installer files will be placed in:
+
+```text
+linux/white-setup/
 ```

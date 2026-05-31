@@ -1,24 +1,18 @@
 # Oktopios Installer - macOS
 
-## Install from PyPI
+## Command line
+
+The command-line installation is handled by PyPI:
 
 ```bash
 python3 -m pip install --user oktopios
 okp --version
 ```
 
-If `okp` is not found, add Python user scripts to your PATH:
+## Native installer
 
-```bash
-export PATH="$HOME/Library/Python/3.12/bin:$PATH"
-okp --version
-```
+macOS native installer files will be placed in:
 
-## From source
-
-```bash
-git clone https://github.com/ALISOULEMOUANWIYA/oktopios.git
-cd oktopios
-python3 -m pip install -e .
-okp --version
+```text
+mac/white-setup/
 ```

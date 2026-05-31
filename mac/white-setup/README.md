@@ -1,8 +1,8 @@
-# macOS - Setup Installer
+# macOS Native Installer
 
-Installer files for macOS can be placed in this folder.
+This folder is reserved for the macOS native installer.
 
-Current recommended installation:
+For now, install from PyPI:
 
 ```bash
 python3 -m pip install --user oktopios
