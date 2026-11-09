@@ -13,8 +13,14 @@ if ! command -v "$PYTHON_BIN" >/dev/null 2>&1; then
     exit 1
 fi
 
-"$PYTHON_BIN" -m ensurepip --upgrade >/dev/null 2>&1 || true
-"$PYTHON_BIN" -m pip install --user --upgrade "$PACKAGE_NAME"
+if ! "$PYTHON_BIN" -c 'import sys; sys.exit(sys.version_info < (3, 8))'; then
+    echo "Error: Python 3.8 or newer is required."
+    exit 1
+fi
+
+if ! "$PYTHON_BIN" -m pip install --user --upgrade "$PACKAGE_NAME"; then
+    "$PYTHON_BIN" -m pip install --user --upgrade --break-system-packages "$PACKAGE_NAME"
+fi
 
 USER_BASE="$($PYTHON_BIN -m site --user-base)"
 BIN_DIR="$USER_BASE/bin"
@@ -25,7 +31,7 @@ fi
 
 if command -v okp >/dev/null 2>&1; then
     echo "==> Oktopios installed successfully"
-    okp --version || true
+    okp --version
 else
     echo "==> Oktopios installed, but 'okp' is not in PATH yet."
     echo "Add this line to ~/.zshrc:"
